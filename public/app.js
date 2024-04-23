@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (var i = 0; i < burger.length; i++) {
             burger[i].addEventListener('click', function() {
                 for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('-left-1');
+                    menu[j].classList.toggle('left-0');
                 }
             });
         }
