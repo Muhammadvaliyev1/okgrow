@@ -73,3 +73,7 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
   .heading-hero {
     font-size: clamp(50px, 8.59vw,110px);
   }
+
+  .bg-gradient {
+    background: linear-gradient(360deg, #FFFFFF 63.2%, rgba(255, 255, 255, 0) 100%);
+  }

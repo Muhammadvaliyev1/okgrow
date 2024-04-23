@@ -7,6 +7,10 @@ module.exports = {
         'Montserrat': ['Montserrat'],
         'Inter': ['Inter']
       },
+      screens: {
+        'base': '900px',
+        'smm': '474px'
+      },
       fontSize: {
         'xr': '13px'
       },
