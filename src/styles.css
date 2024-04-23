@@ -82,18 +82,8 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     background: linear-gradient(180deg, #D7F5F5 0%, #6ACBCC 100%);
   }
 
-  .animborder {
-    border: 1.71px solid;
-    border-image-source: radial-gradient(50% 50% at 50% 50%, rgba(44, 81, 82, 0.32) 0%, rgba(99, 182, 184, 0.32) 100%);
-  }
-
   .animbgSecond {
     background: linear-gradient(180deg, #DBD7F5 0%, #AB9FF9 100%);
-  }
-
-  .animborderSecond {
-    border: 1.71px solid;
-    border-image-source: radial-gradient(50% 50% at 50% 50%, rgba(56, 52, 82, 0.32) 0%, rgba(171, 159, 249, 0.32) 100%);
   }
 
   ::-webkit-scrollbar {
