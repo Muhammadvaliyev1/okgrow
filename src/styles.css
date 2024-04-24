@@ -86,6 +86,11 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     background: linear-gradient(180deg, #DBD7F5 0%, #AB9FF9 100%);
   }
 
+  .elips {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #6ACBCC 100%),
+    linear-gradient(270deg, rgba(255, 255, 255, 0) 2.07%, #EB6A67 91.67%);
+  }
+
   ::-webkit-scrollbar {
     width: 5px;
   }
