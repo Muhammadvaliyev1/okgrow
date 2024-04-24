@@ -106,3 +106,8 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
   }
   
   /* Handle on hover */
+
+  .bgg {
+    background: #EFFBFB;
+    border: 1px solid #B3E4E57A
+  }
