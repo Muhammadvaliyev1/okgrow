@@ -1,5 +1,3 @@
-import Swiper from 'swiper/swiper-bundle.min.js'; // Если вы используете ES модули
-
 document.addEventListener('DOMContentLoaded', function() {
     // open
     const burger = document.querySelectorAll('.hunburger');
