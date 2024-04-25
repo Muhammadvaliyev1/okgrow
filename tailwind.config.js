@@ -21,7 +21,8 @@ module.exports = {
         'turquoise-darker': '#2C5152',
         'turquoise-lighter': '#D7F5F5',
         'turquoise-bright': '#B3E4E5',
-        'skyblue': '#40B4B5'
+        'skyblue': '#40B4B5',
+        'pastelOrange-darker': '#664514',
       },
 
     },
