@@ -111,3 +111,40 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     background: #EFFBFB;
     border: 1px solid #B3E4E57A
   }
+
+  .animationelips {
+    position: absolute;
+    z-index: 20;
+    top: -50px;
+    animation-name: box-mover;
+    animation-duration: 5s;
+    animation-iteration-count: 100;
+  }
+
+  @keyframes box-mover {
+    0% {
+      left: 30%;
+      top: -50px;
+      rotate: -5deg;
+    }
+    25% {
+      left: 50%;
+      top: -50px;
+      rotate: 20deg;
+    }
+    50% {
+      left: 55%;
+      top: -130px;
+      rotate: 35deg;
+    }
+    75% {
+      left: 50%;
+      top: -100px;
+      rotate: 20deg;
+    }
+    100% {
+      left: 30%;
+      top: -50px;
+      rotate: -3deg;
+    }
+  }
