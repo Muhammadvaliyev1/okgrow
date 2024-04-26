@@ -7,6 +7,10 @@ module.exports = {
         'Montserrat': ['Montserrat'],
         'Inter': ['Inter']
       },
+      maxWidth: {
+        '8xl': '1440px',
+        '7.5xl': '1104px',
+      },
       screens: {
         'base': '900px',
         'smm': '474px'
@@ -23,9 +27,6 @@ module.exports = {
         'turquoise-bright': '#B3E4E5',
         'skyblue': '#40B4B5',
         'purple-darker': '#383452',
-        'skyblue': '#40B4B5',
-        'skyblue': '#40B4B5',
-        'skyblue': '#40B4B5',
         'pastelOrange-darker': '#664514',
         'sunsetOreng-normal': '#664514',
       },
