@@ -720,6 +720,9 @@ video {
 .h-\[376px\] {
   height: 376px;
 }
+.h-\[650px\] {
+  height: 650px;
+}
 .h-\[699px\] {
   height: 699px;
 }
@@ -732,6 +735,27 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-80 {
+  height: 20rem;
+}
+.h-\[360px\] {
+  height: 360px;
+}
+.h-\[260px\] {
+  height: 260px;
+}
+.h-\[200px\] {
+  height: 200px;
+}
+.h-\[200p\] {
+  height: 200p;
+}
+.h-\[150px\] {
+  height: 150px;
+}
+.h-\[100px\] {
+  height: 100px;
 }
 .w-10 {
   width: 2.5rem;
@@ -1352,6 +1376,72 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     border: 1px solid #B3E4E57A
   }
 
+  .animationphone {
+    margin-bottom: -100px;
+    animation-name: phone-mover;
+    animation-duration: 5s;
+    animation-iteration-count: 100;
+  }
+  .animationphone2 {
+    bottom: -100px;
+    animation-name: phone-mover2;
+    animation-duration: 5s;
+    animation-iteration-count: 100;
+  }
+
+  @keyframes phone-mover {
+    0% {
+      bottom: -25px;
+    }
+    25% {
+      bottom: -50px;
+    }
+    50% {
+      bottom: -75px;
+    }
+    75% {
+      bottom: -50px;
+    }
+    100% {
+      bottom: -25px;
+    }
+  }
+
+  @keyframes phone-mover2 {
+    0% {
+      margin-bottom: -25px;
+    }
+    25% {
+      margin-bottom: -50px;
+    }
+    50% {
+      margin-bottom: -75px;
+    }
+    75% {
+      margin-bottom: -50px;
+    }
+    100% {
+      margin-bottom: -25px;
+    }
+  }
+  @keyframes phone-mover {
+    0% {
+      margin-bottom: -25px;
+    }
+    25% {
+      margin-bottom: -50px;
+    }
+    50% {
+      margin-bottom: -75px;
+    }
+    75% {
+      margin-bottom: -50px;
+    }
+    100% {
+      margin-bottom: -25px;
+    }
+  }
+
   .animationelips {
     position: absolute;
     z-index: 20;
@@ -1363,27 +1453,27 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 
   @keyframes box-mover {
     0% {
-      left: 30%;
+      left: 10%;
       top: -50px;
       rotate: -5deg;
     }
     25% {
-      left: 50%;
+      left: 20%;
       top: -50px;
       rotate: 20deg;
     }
     50% {
-      left: 55%;
+      left: 35%;
       top: -130px;
       rotate: 35deg;
     }
     75% {
-      left: 50%;
+      left: 20%;
       top: -100px;
       rotate: 20deg;
     }
     100% {
-      left: 30%;
+      left: 10%;
       top: -50px;
       rotate: -3deg;
     }
@@ -1410,6 +1500,10 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 
   .smm\:h-\[700px\] {
     height: 700px;
+  }
+
+  .smm\:h-\[260px\] {
+    height: 260px;
   }
 
   .smm\:w-\[446px\] {
@@ -1509,6 +1603,10 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 
   .sm\:h-\[900px\] {
     height: 900px;
+  }
+
+  .sm\:h-80 {
+    height: 20rem;
   }
 
   .sm\:w-44 {
@@ -1763,6 +1861,15 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 
   .base\:h-\[448px\] {
     height: 448px;
+  }
+
+  .base\:h-0 {
+    height: 0px;
+  }
+
+  .base\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .base\:w-\[776px\] {
