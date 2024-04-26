@@ -525,6 +525,9 @@ video {
 .-left-\[768px\] {
   left: -768px;
 }
+.-right-3 {
+  right: -0.75rem;
+}
 .-right-48 {
   right: -12rem;
 }
@@ -593,6 +596,9 @@ video {
 }
 .top-\[676px\] {
   top: 676px;
+}
+.top-\[7\%\] {
+  top: 7%;
 }
 .z-0 {
   z-index: 0;
@@ -696,6 +702,9 @@ video {
 .h-3 {
   height: 0.75rem;
 }
+.h-40 {
+  height: 10rem;
+}
 .h-56 {
   height: 14rem;
 }
@@ -707,6 +716,9 @@ video {
 }
 .h-\[220px\] {
   height: 220px;
+}
+.h-\[240px\] {
+  height: 240px;
 }
 .h-\[275px\] {
   height: 275px;
@@ -735,27 +747,6 @@ video {
 }
 .h-full {
   height: 100%;
-}
-.h-80 {
-  height: 20rem;
-}
-.h-\[360px\] {
-  height: 360px;
-}
-.h-\[260px\] {
-  height: 260px;
-}
-.h-\[200px\] {
-  height: 200px;
-}
-.h-\[200p\] {
-  height: 200p;
-}
-.h-\[150px\] {
-  height: 150px;
-}
-.h-\[100px\] {
-  height: 100px;
 }
 .w-10 {
   width: 2.5rem;
@@ -801,6 +792,10 @@ video {
 }
 .w-\[98px\] {
   width: 98px;
+}
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .w-full {
   width: 100%;
@@ -875,6 +870,9 @@ video {
 }
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .grid-cols-1 {
@@ -1382,6 +1380,19 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     animation-duration: 5s;
     animation-iteration-count: 100;
   }
+
+  @keyframes phone-mover {
+    0% {
+      bottom: -0px;
+    }
+    50% {
+      bottom: -100px;
+    }
+    100% {
+      bottom: -0px;
+    }
+  }
+
   .animationphone2 {
     bottom: -100px;
     animation-name: phone-mover2;
@@ -1389,53 +1400,12 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     animation-iteration-count: 100;
   }
 
-  @keyframes phone-mover {
-    0% {
-      bottom: -25px;
-    }
-    25% {
-      bottom: -50px;
-    }
-    50% {
-      bottom: -75px;
-    }
-    75% {
-      bottom: -50px;
-    }
-    100% {
-      bottom: -25px;
-    }
-  }
-
   @keyframes phone-mover2 {
     0% {
       margin-bottom: -25px;
     }
-    25% {
-      margin-bottom: -50px;
-    }
     50% {
-      margin-bottom: -75px;
-    }
-    75% {
-      margin-bottom: -50px;
-    }
-    100% {
-      margin-bottom: -25px;
-    }
-  }
-  @keyframes phone-mover {
-    0% {
-      margin-bottom: -25px;
-    }
-    25% {
-      margin-bottom: -50px;
-    }
-    50% {
-      margin-bottom: -75px;
-    }
-    75% {
-      margin-bottom: -50px;
+      margin-bottom: -100px;
     }
     100% {
       margin-bottom: -25px;
@@ -1447,35 +1417,90 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     z-index: 20;
     top: -50px;
     animation-name: box-mover;
-    animation-duration: 5s;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+  }
+
+  @media (max-width: 500px) {
+    .animationelips {
+      position: absolute;
+      z-index: 20;
+      top: -50px;
+      animation-name: box-mover2;
+      animation-duration: 7s;
+      animation-fill-mode: both;
+      animation-iteration-count: 100;
+    }
+  }
+  .animationelips2 {
+    position: absolute;
+    z-index: 20;
+    top: 0px;
+    background: #6ACBCC;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(64px);
+    -webkit-backdrop-filter: blur(32px);
+            backdrop-filter: blur(32px);
+    /* Note: backdrop-filter has minimal browser support */
+    transform: rotate(-11.95deg);
+    animation-name: box-mover;
+    animation-duration: 7s;
+    animation-fill-mode: both;
     animation-iteration-count: 100;
   }
 
   @keyframes box-mover {
     0% {
-      left: 10%;
-      top: -50px;
-      rotate: -5deg;
-    }
-    25% {
-      left: 20%;
-      top: -50px;
-      rotate: 20deg;
+      left: 30%;
+      rotate: -3deg;
     }
     50% {
-      left: 35%;
-      top: -130px;
-      rotate: 35deg;
-    }
-    75% {
-      left: 20%;
-      top: -100px;
-      rotate: 20deg;
+      left: 39%;
+      rotate: 30deg;
     }
     100% {
-      left: 10%;
-      top: -50px;
+      left: 30%;
       rotate: -3deg;
+    }
+  }
+
+  @keyframes box-mover2 {
+    0% {
+      left: 17%;
+      rotate: -3deg;
+    }
+    50% {
+      left: 22%;
+      rotate: 30deg;
+    }
+    100% {
+      left: 17%;
+      rotate: -3deg;
+    }
+  }
+  
+
+  .animtik {
+    animation-name: rotate-tik;
+    animation-duration: 2900ms;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+  }
+
+  @keyframes rotate-tik {
+    0% {
+      rotate: 0deg;
+      top: 7%;
+    }
+    50% {
+      rotate: -7.5deg;
+      top: 10%;
+    }
+    100% {
+      rotate: 0deg;
+      top: 7%;
     }
   }
 
@@ -1498,12 +1523,12 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     height: 248px;
   }
 
-  .smm\:h-\[700px\] {
-    height: 700px;
-  }
-
   .smm\:h-\[260px\] {
     height: 260px;
+  }
+
+  .smm\:h-\[700px\] {
+    height: 700px;
   }
 
   .smm\:w-\[446px\] {
@@ -1520,6 +1545,10 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 }
 
   @media (min-width: 640px) {
+
+  .sm\:-right-20 {
+    right: -5rem;
+  }
 
   .sm\:-right-40 {
     right: -10rem;
@@ -1589,6 +1618,10 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     display: none;
   }
 
+  .sm\:h-80 {
+    height: 20rem;
+  }
+
   .sm\:h-\[348px\] {
     height: 348px;
   }
@@ -1605,12 +1638,12 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     height: 900px;
   }
 
-  .sm\:h-80 {
-    height: 20rem;
-  }
-
   .sm\:w-44 {
     width: 11rem;
+  }
+
+  .sm\:w-\[144px\] {
+    width: 144px;
   }
 
   .sm\:w-\[351px\] {
@@ -1861,10 +1894,6 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 
   .base\:h-\[448px\] {
     height: 448px;
-  }
-
-  .base\:h-0 {
-    height: 0px;
   }
 
   .base\:h-fit {

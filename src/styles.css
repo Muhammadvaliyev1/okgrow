@@ -118,6 +118,19 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     animation-duration: 5s;
     animation-iteration-count: 100;
   }
+
+  @keyframes phone-mover {
+    0% {
+      bottom: -0px;
+    }
+    50% {
+      bottom: -100px;
+    }
+    100% {
+      bottom: -0px;
+    }
+  }
+
   .animationphone2 {
     bottom: -100px;
     animation-name: phone-mover2;
@@ -125,53 +138,12 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     animation-iteration-count: 100;
   }
 
-  @keyframes phone-mover {
-    0% {
-      bottom: -25px;
-    }
-    25% {
-      bottom: -50px;
-    }
-    50% {
-      bottom: -75px;
-    }
-    75% {
-      bottom: -50px;
-    }
-    100% {
-      bottom: -25px;
-    }
-  }
-
   @keyframes phone-mover2 {
     0% {
       margin-bottom: -25px;
     }
-    25% {
-      margin-bottom: -50px;
-    }
     50% {
-      margin-bottom: -75px;
-    }
-    75% {
-      margin-bottom: -50px;
-    }
-    100% {
-      margin-bottom: -25px;
-    }
-  }
-  @keyframes phone-mover {
-    0% {
-      margin-bottom: -25px;
-    }
-    25% {
-      margin-bottom: -50px;
-    }
-    50% {
-      margin-bottom: -75px;
-    }
-    75% {
-      margin-bottom: -50px;
+      margin-bottom: -100px;
     }
     100% {
       margin-bottom: -25px;
@@ -183,34 +155,88 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     z-index: 20;
     top: -50px;
     animation-name: box-mover;
-    animation-duration: 5s;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+  }
+
+  @media (max-width: 500px) {
+    .animationelips {
+      position: absolute;
+      z-index: 20;
+      top: -50px;
+      animation-name: box-mover2;
+      animation-duration: 7s;
+      animation-fill-mode: both;
+      animation-iteration-count: 100;
+    }
+  }
+  .animationelips2 {
+    position: absolute;
+    z-index: 20;
+    top: 0px;
+    background: #6ACBCC;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(64px);
+    backdrop-filter: blur(32px);
+    /* Note: backdrop-filter has minimal browser support */
+    transform: rotate(-11.95deg);
+    animation-name: box-mover;
+    animation-duration: 7s;
+    animation-fill-mode: both;
     animation-iteration-count: 100;
   }
 
   @keyframes box-mover {
     0% {
-      left: 10%;
-      top: -50px;
-      rotate: -5deg;
-    }
-    25% {
-      left: 20%;
-      top: -50px;
-      rotate: 20deg;
+      left: 30%;
+      rotate: -3deg;
     }
     50% {
-      left: 35%;
-      top: -130px;
-      rotate: 35deg;
-    }
-    75% {
-      left: 20%;
-      top: -100px;
-      rotate: 20deg;
+      left: 39%;
+      rotate: 30deg;
     }
     100% {
-      left: 10%;
-      top: -50px;
+      left: 30%;
       rotate: -3deg;
+    }
+  }
+
+  @keyframes box-mover2 {
+    0% {
+      left: 17%;
+      rotate: -3deg;
+    }
+    50% {
+      left: 22%;
+      rotate: 30deg;
+    }
+    100% {
+      left: 17%;
+      rotate: -3deg;
+    }
+  }
+  
+
+  .animtik {
+    animation-name: rotate-tik;
+    animation-duration: 2900ms;
+    animation-fill-mode: both;
+    animation-iteration-count: 100;
+  }
+
+  @keyframes rotate-tik {
+    0% {
+      rotate: 0deg;
+      top: 7%;
+    }
+    50% {
+      rotate: -7.5deg;
+      top: 10%;
+    }
+    100% {
+      rotate: 0deg;
+      top: 7%;
     }
   }
