@@ -115,7 +115,7 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
   .animationphone {
     margin-bottom: -100px;
     animation-name: phone-mover;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 100;
   }
 
@@ -134,7 +134,7 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
   .animationphone2 {
     bottom: -100px;
     animation-name: phone-mover2;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 100;
   }
 
@@ -155,9 +155,9 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
     z-index: 20;
     top: -50px;
     animation-name: box-mover;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-fill-mode: both;
-    animation-iteration-count: 100;
+    animation-iteration-count: 200;
   }
 
   @media (max-width: 500px) {
@@ -166,9 +166,8 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
       z-index: 20;
       top: -50px;
       animation-name: box-mover2;
-      animation-duration: 3s;
-      animation-fill-mode: both;
-      animation-iteration-count: 100;
+      animation-duration: 5s;
+      animation-iteration-count: 200;
     }
   }
   .animationelips2 {
@@ -194,7 +193,7 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
       rotate: -3deg;
     }
     50% {
-      left: 39%;
+      left: 38%;
       rotate: 30deg;
     }
     100% {
