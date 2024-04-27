@@ -1428,7 +1428,7 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
       z-index: 20;
       top: -50px;
       animation-name: box-mover2;
-      animation-duration: 7s;
+      animation-duration: 3s;
       animation-fill-mode: both;
       animation-iteration-count: 100;
     }
