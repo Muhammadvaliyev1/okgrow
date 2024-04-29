@@ -21,6 +21,9 @@ module.exports = {
       colors: {
         'blacked': '#0F0F0F',
         'gray': '#191919',
+        'green-darker': '#215235',
+        'purple-lighter': '#DBD7F5',
+        'purple-darker': '#383452',
         'turquoise-normal': '#6ACBCC',
         'turquoise-darker': '#2C5152',
         'turquoise-lighter': '#D7F5F5',

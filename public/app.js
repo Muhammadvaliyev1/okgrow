@@ -49,3 +49,18 @@ const xburger = document.getElementById('hello');
   xburger.addEventListener('click', () => {
       budy.classList.toggle('overflow-hidden');
   });
+
+  function showDropdownOptions() {
+    let option = document.getElementById("options");
+    option.classList.toggle("hidden");
+  }
+
+  function showDropdownOptions2() {
+    let option2 = document.getElementById("options2");
+    option2.classList.toggle("hidden");
+  }
+
+  function showDropdownOptions3() {
+    let option3 = document.getElementById("options3");
+    option3.classList.toggle("hidden");
+  }

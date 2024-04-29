@@ -239,3 +239,11 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
       top: 7%;
     }
   }
+  .active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
+    radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .dropshadow {
+    box-shadow: 0px 32px 64px -16px #85818E29;
+  }
