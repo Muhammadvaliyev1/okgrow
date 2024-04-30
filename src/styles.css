@@ -93,6 +93,7 @@ radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255,
 
   ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
   }
   
   /* Track */

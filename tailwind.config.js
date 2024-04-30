@@ -10,6 +10,7 @@ module.exports = {
       maxWidth: {
         '8xl': '1440px',
         '7.5xl': '1104px',
+        '2.5xl': '728px',
       },
       screens: {
         'base': '900px',
